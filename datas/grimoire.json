@@ -409,9 +409,7 @@
                 "Dégâts": "-",
                 "Classe": "Mage",
                 "Source": "ToC"
-            }
-            ],
-            "Compagnon": [
+            },     
             {
                 "Nom": "Cenlly Graig",
                 "Élément": "Terre",
@@ -1298,7 +1296,72 @@
                 "Dégats": "-",
                 "Classe": "Druide",
                 "Source": "Toc"
-            }
+            },
+            {
+              "Nom": "Yrden",
+              "Element": "Mixte",
+              "Type": "Signs",
+              "Cout": "X",
+              "Durée": "5 rounds",
+              "Effet": "Créer une cercle qui donne un Malus en VIT et REF. (Max -4)",
+              "Porter": "Rayon de 3m",
+              "Defense": "Aucune",
+              "Dégats": "-",
+              "Classe": "Sorceleur",
+              "Source": "Base"
+          },
+          {
+              "Nom": "Quen",
+              "Element": "Terre",
+              "Type": "Signs",
+              "Cout": "X",
+              "Durée": "10 rounds ou jusqu'à épuisement",
+              "Effet": "Créer une Bouclier de 5PS pour chaque End Dépensée",
+              "Porter": "personnelle",
+              "Defense": "Aucune",
+              "Dégats": "-",
+              "Classe": "Sorceleur",
+              "Source": "Base"
+          },
+          {
+              "Nom": "Aard",
+              "Element": "Air",
+              "Type": "Signs",
+              "Cout": "X",
+              "Durée": "Instantané",
+              "Effet": "Vague de force qui stupéfie la cible 10% par point d'END dépensé.",
+              "Porter": "Cône de 2m",
+              "Defense": "Esquive",
+              "Dégats": "-",
+              "Classe": "Sorceleur",
+              "Source": "Base"
+          },
+          {
+              "Nom": "Igni",
+              "Element": "Feu",
+              "Type": "Signs",
+              "Cout": "X",
+              "Durée": "Instantané",
+              "Effet": "Langue de feu qui inflige 1D6 dégât de feu par point d'END dépensé. (50% feu)",
+              "Porter": "Cône de 2m",
+              "Defense": "Esquive ou Blocage",
+              "Dégats": "1D6/END",
+              "Classe": "Sorceleur",
+              "Source": "Base"
+          },
+          {
+              "Nom": "Axii",
+              "Element": "Eau",
+              "Type": "Signs",
+              "Cout": "X",
+              "Durée": "Instantané",
+              "Effet": "Etourdie un adversaire. Malus de -1 pour chaque 2 points d'END dépensés après le 1er.",
+              "Porter": "8m",
+              "Defense": "Jusqu'à s'en débarrasser",
+              "Dégats": "-",
+              "Classe": "Sorceleur",
+              "Source": "Base"
+          }
         ]
     },
     "Compagnon" : {
@@ -2153,7 +2216,111 @@
                 "Dégats": "6D6",
                 "Classe": "Druide",
                 "Source": "Fan Made"
-            }
+            },
+            {
+              "Nom": "Piège magique",
+              "Element": "Mixte",
+              "Type": "Signs",
+              "Cout": "X",
+              "Durée": "1 round/END",
+              "Effet": "Créer un piège magique qui inflige 3D6 par round.",
+              "Porter": "Rayon de 3m",
+              "Defense": "Esquive ou Blocage",
+              "Dégats": "3D6",
+              "Classe": "Sorceleur",
+              "Source": "Base"
+          },
+          {
+              "Nom": "Bouclier actif",
+              "Element": "Terre",
+              "Type": "Signs",
+              "Cout": "X",
+              "Durée": "Actif (1 END de départ)",
+              "Effet": "Créer un bouclier de 10PS pour chaque END dépensée. Peut être partagé.",
+              "Porter": "personnelle",
+              "Defense": "Aucune",
+              "Dégats": "-",
+              "Classe": "Sorceleur",
+              "Source": "Base"
+          },
+          {
+              "Nom": "Somne",
+              "Element": "Terre",
+              "Type": "Signs",
+              "Cout": "X",
+              "Durée": "X",
+              "Effet": "Fait tomber une cible dans l'inconscience",
+              "Porter": "8m",
+              "Defense": "Res Magie",
+              "Dégats": "-",
+              "Classe": "Sorceleur",
+              "Source": "ToC"
+          },
+          {
+              "Nom": "Balayage d’Aard",
+              "Element": "Air",
+              "Type": "Signs",
+              "Cout": "X",
+              "Durée": "Instantané",
+              "Effet": "Créer une explosion télékinésique. 10% d'être mis à terre et stupéfié par point d'END.",
+              "Porter": "Rayon de 4m",
+              "Defense": "Esquive",
+              "Dégats": "-",
+              "Classe": "Sorceleur",
+              "Source": "Base"
+          },
+          {
+              "Nom": "Supirre",
+              "Element": "Air",
+              "Type": "Signs",
+              "Cout": "X",
+              "Durée": "10mn",
+              "Effet": "Améliore l'audition, permettant d'entendre des conversations ou des sons éloignés à travers les murs. Pour chaque point d'END dépensé, l'effet dure 1 minute de plus",
+              "Porter": "X",
+              "Defense": "Aucune",
+              "Dégats": "-",
+              "Classe": "Sorceleur",
+              "Source": "ToC"
+          },
+          {
+              "Nom": "Écholocalisation",
+              "Element": "Air",
+              "Type": "Signs",
+              "Cout": "X",
+              "Durée": "Actif (X/2 END)",
+              "Effet": "Sonar sur X mètres x2",
+              "Porter": "X",
+              "Defense": "Aucune",
+              "Dégats": "-",
+              "Classe": "Sorceleur",
+              "Source": "Fan Made"
+          },
+          {
+              "Nom": "Langue de feu",
+              "Element": "Feu",
+              "Type": "Signs",
+              "Cout": "X",
+              "Durée": "Actif (X/2 END)",
+              "Effet": "Lance 1D6 dégât de Feu/END avec feu (75%). Peut être maintenu pour X/2 END.",
+              "Porter": "3m",
+              "Defense": "Esquive ou Blocage",
+              "Dégats": "1D6/END",
+              "Classe": "Sorceleur",
+              "Source": "Base"
+          },
+          {
+              "Nom": "Marionnette",
+              "Element": "Eau",
+              "Type": "Signs",
+              "Cout": "X",
+              "Durée": "Jusqu’à dissipation",
+              "Effet": "Contrôle un adversaire qui devient un allié pendant X rounds.",
+              "Porter": "8m",
+              "Defense": "Res Magie",
+              "Dégats": "1D6/END",
+              "Classe": "Sorceleur",
+              "Source": "Base"
+          }
           ]
     },
     "Maitre" : {
