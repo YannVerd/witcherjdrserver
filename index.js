@@ -26,9 +26,7 @@ app.get('/grimoire', (req, res)=> {
 app.get("/characters", async (req, res)=>{
     try {
         let datas = await db.collection("characters").find().toArray();
-        console.log(datas);
         res.json(datas);
-        db.close();
     }catch(e){
         console.error('fail get characters', e)
         res.send({message: "failed to get characters"})
