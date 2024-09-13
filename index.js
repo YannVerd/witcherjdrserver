@@ -5,8 +5,9 @@ import dotenv from 'dotenv';
 import { connect } from './db/connect.js'
 import { ObjectId } from 'mongodb';
 
+dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
 
-dotenv.config();
+
 
 const db = await connect();
 
