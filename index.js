@@ -1,6 +1,5 @@
 import express from 'express';
 import cors from 'cors';
-import path from 'path';
 import dotenv from 'dotenv';
 import { connect } from './db/connect.js'
 import { ObjectId } from 'mongodb';
@@ -11,7 +10,6 @@ dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
 
 const db = await connect();
 
-let __dirname = path.resolve();
 const app = express();
 
 app.use(cors());
@@ -19,10 +17,6 @@ app.use(cors());
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 
-app.get('/grimoire', (req, res)=> {
-    res.header("Content-Type",'application/json');
-    res.sendFile(path.join(__dirname+"/datas/grimoire.json")); 
-})
 
 app.get("/characters", async (req, res)=>{
     try {
